@@ -5,7 +5,7 @@ t = turtle.Turtle() # init pen
 
 t.width(3) # width() is an alias for pensize()
 t.speed(0) # super fast
-t.color('cyan') # lime green
+t.color('cyan')
 turtle.bgcolor('black') 
 
 for i in range(18):
