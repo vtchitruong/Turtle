@@ -9,11 +9,11 @@ p.color('#ffeb0f') # yellow
 
 for _ in range(36):
     # draw the lower stroke
-    p.circle(radius=200, extent=90)
+    p.circle(radius=200, extent=90) # a 90 degrees arc
     
     # draw an upper stroke
     p.left(100)    
-    p.circle(radius=200, extent=90)
+    p.circle(radius=200, extent=90) # a 90 degrees arc
 
     p.left(10)
 
