@@ -1,17 +1,30 @@
 import turtle
-colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple']
 
-s = turtle.getscreen() # init screen
-turtle.Screen().bgcolor('black')
+if __name__ == '__main__':
+    colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple']
 
-p = turtle.Turtle() # init pen
+    # Init screen
+    s = turtle.getscreen()
+    turtle.Screen().bgcolor('black')
 
-p.speed(0) # super fast
+    # Init pen
+    p = turtle.Turtle()
 
-for x in range(360):
-    p.pencolor(colors[x % 6]) # set 6 different colors to 6 edges
-    p.width(x // 100) # set pensize from thin to thick   
-    p.forward(x) # draw 1 edge
-    p.left(61) # turn left by 60 degrees for spiral effect
+    # Set speed of pen to super fast
+    p.speed(0)
 
-p.screen.mainloop() # pause for viewing
+    for x in range(360):
+        # Set 6 different colors to 6 edges
+        p.pencolor(colors[x % 6])
+
+        # Set pen size from thin to thick
+        p.width(x // 100)
+
+        # Draw 1 edge
+        p.forward(x)
+
+        # Turn left by 60 degrees for spiral effect
+        p.left(61)
+
+    # Pause for viewing
+    p.screen.mainloop()
